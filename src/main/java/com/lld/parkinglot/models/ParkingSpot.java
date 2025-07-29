@@ -35,11 +35,7 @@ public class ParkingSpot {
     
     private boolean isAvailable = true;
     
-    private boolean available = true;
-    
     private boolean isReserved = false;
-    
-    private boolean reserved = false;
     
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "current_vehicle_id")
@@ -186,8 +182,8 @@ public class ParkingSpot {
     public String getSection() { return section; }
     public void setSection(String section) { this.section = section; }
     
-    public boolean isAvailable() { return available; }
-    public void setAvailable(boolean available) { this.available = available; }
+    public boolean isAvailable() { return isAvailable; }
+    public void setAvailable(boolean available) { this.isAvailable = available; }
     
     public Vehicle getCurrentVehicle() { return currentVehicle; }
     public void setCurrentVehicle(Vehicle currentVehicle) { this.currentVehicle = currentVehicle; }
@@ -195,8 +191,8 @@ public class ParkingSpot {
     public LocalDateTime getOccupiedSince() { return occupiedSince; }
     public void setOccupiedSince(LocalDateTime occupiedSince) { this.occupiedSince = occupiedSince; }
     
-    public boolean isReserved() { return reserved; }
-    public void setReserved(boolean reserved) { this.reserved = reserved; }
+    public boolean isReserved() { return isReserved; }
+    public void setReserved(boolean reserved) { this.isReserved = reserved; }
     
     public LocalDateTime getReservedUntil() { return reservedUntil; }
     public void setReservedUntil(LocalDateTime reservedUntil) { this.reservedUntil = reservedUntil; }
