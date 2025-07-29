@@ -98,7 +98,7 @@ public class ParkingLotDemo implements CommandLineRunner {
         
         // Create vehicles
         Vehicle car1 = vehicleFactory.createCar("ABC123", "Red", "Honda Civic");
-        Vehicle car2 = vehicleFactory.createElectricCar("EV456", "White", "Tesla Model 3");
+        Vehicle car2 = vehicleFactory.createElectricCar("EV4567", "White", "Tesla Model 3");
         Vehicle motorcycle = vehicleFactory.createMotorcycle("BIKE789", "Black", "Harley Davidson");
         
         // Park vehicles
